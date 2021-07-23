@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "container">
+        <div id = "cabeçalho">
+            <h1 id = "titulo">Cadastro de Dev</h1>
+            <p id = "subtitulo">Complete com suas informações</p>
+        </div>
+        <form action = "" id = formulario>
+            <fieldset class = "grupo">
+                <div class = "campo">
+                    <label for = "nome"><strong>Nome</strong></label>
+                    <input type = "text" name = "nome" id = "nome" placeholder="Digite seu nome" required>
+                    
+                </div>
+                <div class = "campo">
+                    <label for = "sobrenome"><strong>Sobrenome</strong></label>
+                    <input type = "text" name = "sobrenome" id = "sobrenome" placeholder="Digite seu sobrenome" required>  
+                </div>
+            </fieldset>
+            <fieldset class = "grupo">
+                <div class = "campo">
+                    <label for = "email"><strong>E-mail</strong></label>
+                    <input type = "email" name = "email" id = "email" placeholder="Digite seu e-mail" required>
+                    
+                </div>
+                <div class = "campo">
+                    <label for = "senha"><strong>Senha</strong></label>
+                    <input type = "password" name = "senha" id = "senha" placeholder="Digite sua senha" required>  
+                </div>
+            </fieldset>
+            <div class = "campo">
+                <label><strong>Como você se identifica?</strong></label>
+                <label>
+                    <input type ="radio" nome = "sexo" value ="mulher" checked>Mulher
+                </label>
+                <label>
+                    <input type ="radio" nome = "sexo" value ="homem">Homem 
+                </label>
+                <label>
+                    <input type ="radio" nome = "sexo" value ="outro">Outro
+                </label>
+            </div>
+            <div class = "campo">
+                <label for = "senioridade"><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                <select id = "senioridade">
+                    <option selected disabled value ="">Selecione</option>
+                    <option>Front-end</option>
+                    <option>Back-end</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
+            <fieldset class = "grupo">
+                <div id = "check">
+                    <label><strong>Selecione as tecnologias que você utiliza:</strong></label>
+                    <input type="checkbox" id = "tecnologia1" nome = "tecnologia1" value = "HTML">
+                    <label for = "tecnologia1">HTML</label>
+                    <input type="checkbox" id = "tecnologia2" nome = "tecnologia2" value = "C">
+                    <label for = "tecnologia2">C</label>
+                    <input type="checkbox" id = "tecnologia3" nome = "tecnologia3" value = "JAVA">
+                    <label for = "tecnologia3">JAVA</label>
+                    <input type="checkbox" id = "tecnologia4" nome = "tecnologia4" value = "Python">
+                    <label for = "tecnologia4">PYTHON</label>
+                </div>
+            </fieldset>
+
+            <button type ="submit" id = "btn-submit">Enviar Formulário</button>
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
